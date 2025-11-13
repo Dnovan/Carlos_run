@@ -35,6 +35,7 @@ flutter:
     - assets/images/Bat/
     - assets/images/Rino/
     - assets/images/Desert/
+    - assets/images/Montañas/
     - assets/audio/
 
   fonts:

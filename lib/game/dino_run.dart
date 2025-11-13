@@ -38,6 +38,9 @@ class DinoRun extends FlameGame with TapDetector, HasCollisionDetection {
       'Desert/desert_foreground_far.png',
       'Desert/desert_foreground_near.png',
       'Desert/desert_ground.png',
+      'Montañas/1.png',
+      'Montañas/2.png',
+      'Montañas/3.png',
     ];
   
     // List of all the audio assets.
@@ -102,6 +105,13 @@ class DinoRun extends FlameGame with TapDetector, HasCollisionDetection {
               'plx-6.png',
             ];
             folder = 'parallax';
+          } else if (level == 'snow') {
+            imageNames = [
+              '1.png',
+              '2.png',
+              '3.png',
+            ];
+            folder = 'Montañas';
           } else {
             imageNames = [
               'desert_ground.png',

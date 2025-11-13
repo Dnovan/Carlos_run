@@ -48,6 +48,15 @@ class LevelSelectionMenu extends StatelessWidget {
             ),
             const SizedBox(height: 20),
             ElevatedButton(
+              onPressed: () async {
+                await game.startGamePlay('snow');
+                game.overlays.remove(id);
+                game.overlays.add(Hud.id);
+              },
+              child: const Text('Nieve'),
+            ),
+            const SizedBox(height: 20),
+            ElevatedButton(
               onPressed: () {
                 game.overlays.remove(id);
                 game.overlays.add(MainMenu.id);
